@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaquinhas Cristãs em Madeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+<script src="script.js"></script>
+
+<div id="modalLogin" class="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharLogin()">
+            &times;
+        </span>
+
+        <h2>Login / Cadastro</h2>
+
+        <input type="text" id="nome" placeholder="Nome">
+
+        <input type="number" id="idade" placeholder="Idade">
+
+        <input type="text" id="contato"
+        placeholder="Email ou Telefone">
+
+        <button onclick="salvarUsuario()">
+            Entrar
+        </button>
+
+    </div>
+
+</div>
+
+
+<body>
+
+   <header>
+    <h1>Plaquinhas Cristãs em Madeira</h1>
+
+    <p class="biografia">
+       Olá! Eu sou um jovem cristão apaixonado por criar plaquinhas decorativas em madeira.
+        Cada peça é produzida com carinho e propósito, levando mensagens de fé,
+         esperança e amor para o seu lar.
+        Meu objetivo é criar produtos que fortaleçam o seu dia a dia, lembrem você de que
+         nunca está sozinho e deixem qualquer ambiente mais acolhedor e inspirador.
+        Confira nossos produtos abaixo e encontre a plaquinha ideal para você ou para presentear alguém especial.
+        <br><br>
+        Veja mais produtos abaixo.
+    </p>
+
+    <a href="https://wa.me/5545991168952" class="btn-whatsapp">
+        Fazer Pedido no WhatsApp
+    </a>
+
+<br><br>
+
+<button onclick="abrirLogin()" class="btn-login">
+    Login / Cadastre-se
+</button>
+
+</header>
+
+    <section class="sobre">
+        <h2>Sobre Nossas Plaquinhas</h2>
+        <p>
+            Produzimos plaquinhas decorativas em madeira com mensagens cristãs,
+            perfeitas para decorar sua casa, presentear alguém especial ou
+            fortalecer sua fé no dia a dia.
+        </p>
+    </section>
+
+  <section class="produtos">
+    <h2>Nossos Produtos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="imagens/graca-verdade.png">
+            <h3>Graça e Verdade Firmam Este Lar</h3>
+            <p>R$ 35,00</p>
+
+            <button onclick="adicionarCarrinho(
+            'Graça e Verdade Firmam Este Lar',35)">
+            Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/deus-provera.png">
+            <h3>Deus Proverá</h3>
+            <p>R$ 35,00</p>
+
+            <button onclick="adicionarCarrinho(
+            'Deus Proverá',35)">
+            Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/reflita-o-ceu.png">
+            <h3>Que Este Lar Reflita o Céu</h3>
+            <p>R$ 59,90</p>
+
+            <button onclick="adicionarCarrinho(
+            'Que Este Lar Reflita o Céu',59.90)">
+            Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/dignidade-lar.png">
+            <h3>Dignidade e Santidade do Lar</h3>
+            <p>R$ 59,90</p>
+
+            <button onclick="adicionarCarrinho(
+            'Dignidade e Santidade do Lar',59.90)">
+            Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section class="carrinho">
+
+    <h2>🛒 Carrinho</h2>
+
+    <ul id="listaCarrinho"></ul>
+
+    <h3 id="total">
+        Total: R$ 0,00
+    </h3>
+
+    <button onclick="finalizarPedido()">
+        Finalizar Pedido
+    </button>
+
+</section>
+
+    <footer>
+        <p>© 2026 - Plaquinhas Cristãs em Madeira</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
